@@ -61,6 +61,9 @@
               <button class="dropdown-item" type="button">
                 <a class="text-body mr-3" href="Inscribirse.php">Inscribirse</a>
               </button>
+              <button class="dropdown-item" type="button">
+                <a class="text-body mr-3" href="../php/perfil_usuario.php">Cuenta</a>
+              </button>
             </div>
           </div>
         </div>
@@ -123,7 +126,7 @@
       <div class="col-lg-9">
         <nav
           class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
-          <a href="index.php" class="text-decoration-none d-block d-lg-none">
+          <a href="../index.php" class="text-decoration-none d-block d-lg-none">
             <span class="h1 text-uppercase text-dark bg-light px-2">Lujos</span>
             <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">LaPava</span>
           </a>
@@ -138,7 +141,7 @@
             class="collapse navbar-collapse justify-content-between"
             id="navbarCollapse">
             <div class="navbar-nav mr-auto py-0">
-              <a href="index.php" class="nav-item nav-link active">Inicio</a>
+              <a href="../index.php" class="nav-item nav-link active">Inicio</a>
               <a href="ProductosyRepuestos.php" class="nav-item nav-link">Productos y repuestos</a>
               <a href="AgendarCitas.php" class="nav-item nav-link">Agenda tu cita</a>
               <div class="nav-item dropdown">
@@ -172,7 +175,7 @@
     <div class="row px-xl-5">
       <div class="col-12">
         <nav class="breadcrumb bg-light mb-30">
-          <a class="breadcrumb-item text-dark" href="index.php">Inicio</a>
+          <a class="breadcrumb-item text-dark" href="../index.php">Inicio</a>
           <span class="breadcrumb-item active">Preguntas Frecuentes</span>
         </nav>
       </div>
@@ -271,7 +274,7 @@
           <div class="col-md-4 mb-5">
             <h5 class="text-secondary text-uppercase mb-4">Atajos</h5>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-secondary mb-2" href="../screens/index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+              <a class="text-secondary mb-2" href="../index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
               <a class="text-secondary mb-2" href="../screens/ProductosyRepuestos.php"><i class="fa fa-angle-right mr-2"></i>Productos y
                 Repuestos</a>
               <a class="text-secondary mb-2" href="../screens/Carrito.php"><i class="fa fa-angle-right mr-2"></i>Carrito de compra</a>
@@ -283,7 +286,7 @@
           <div class="col-md-4 mb-5">
             <h5 class="text-secondary text-uppercase mb-4">Mi cuenta</h5>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-secondary mb-2" href="../screens/index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+              <a class="text-secondary mb-2" href="../index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
               <a class="text-secondary mb-2" href="../screens/login.php"><i class="fa fa-angle-right mr-2"></i>Iniciar sesión</a>
               <a class="text-secondary mb-2" href="../screens/Inscribirse.php"><i class="fa fa-angle-right mr-2"></i>Inscribirse</a>
               <a class="text-secondary mb-2" href="../screens/servicosMacanicos.php"><i class="fa fa-angle-right mr-2"></i>Información de

@@ -95,4 +95,4 @@ class AppointmentsHandler
 
 // Create the handler with your existing PDO connection
 $appointmentsHandler = new AppointmentsHandler($pdo);
-?>
+

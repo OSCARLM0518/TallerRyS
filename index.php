@@ -23,11 +23,11 @@
     rel="stylesheet" />
 
   <!-- Libraries Stylesheet -->
-  <link href="../lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
   <!-- Customized Bootstrap Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,9 +36,9 @@
     <div class="row bg-secondary py-1 px-xl-5">
       <div class="col-lg-6 d-none d-lg-block">
         <div class="d-inline-flex align-items-center h-100">
-          <a class="text-body mr-3" href="contacto.php">Contacto</a>
-          <a class="text-body mr-3" href="ayuda.php">Ayuda</a>
-          <a class="text-body mr-3" href="Preguntas.php">Preguntas Frecuentes</a>
+          <a class="text-body mr-3" href="screens/contacto.php">Contacto</a>
+          <a class="text-body mr-3" href="screens/ayuda.php">Ayuda</a>
+          <a class="text-body mr-3" href="screens/Preguntas.php">Preguntas Frecuentes</a>
         </div>
       </div>
       <div class="col-lg-6 text-center text-lg-right">
@@ -52,10 +52,13 @@
             </button>
             <div class="dropdown-menu dropdown-menu-right">
               <button class="dropdown-item" type="button">
-                <a class="text-body mr-3" href="login.php">Iniciar sesión</a>
+                <a class="text-body mr-3" href="screens/login.php">Iniciar sesión</a>
               </button>
               <button class="dropdown-item" type="button">
-                <a class="text-body mr-3" href="Inscribirse.php">Inscribirse</a>
+                <a class="text-body mr-3" href="screens/Inscribirse.php">Inscribirse</a>
+              </button>
+              <button class="dropdown-item" type="button">
+                <a class="text-body mr-3" href="php/perfil_usuario.php">Cuenta</a>
               </button>
             </div>
           </div>
@@ -120,13 +123,13 @@
                 <i class="fa fa-angle-right float-right mt-1"></i></a>
               <div
                 class="dropdown-menu position-absolute rounded-0 border-0 m-0">
-                <a href="servicosMacanicos.php" class="dropdown-item">Servicios mecanicos</a>
-                <a href="ProductosyRepuestos.php" class="dropdown-item">Venta de productos y repuestos</a>
+                <a href="screens/servicosMacanicos.php" class="dropdown-item">Servicios mecanicos</a>
+                <a href="screens/ProductosyRepuestos.php" class="dropdown-item">Venta de productos y repuestos</a>
               </div>
             </div>
-            <a href="Informaciónmecanicos.php" class="nav-item nav-link">Información de mecanicos</a>
-            <a href="Consejos.php" class="nav-item nav-link">Consejos</a>
-            <a href="trabajosRealizados.php" class="nav-item nav-link">trabajos realizados</a>
+            <a href="screens/Informaciónmecanicos.php" class="nav-item nav-link">Información de mecanicos</a>
+            <a href="screens/Consejos.php" class="nav-item nav-link">Consejos</a>
+            <a href="screens/trabajosRealizados.php" class="nav-item nav-link">trabajos realizados</a>
           </div>
         </nav>
       </div>
@@ -149,8 +152,8 @@
             id="navbarCollapse">
             <div class="navbar-nav mr-auto py-0">
               <a href="index.php" class="nav-item nav-link active">Inicio</a>
-              <a href="ProductosyRepuestos.php" class="nav-item nav-link">Productos y repuestos</a>
-              <a href="AgendarCitas.php" class="nav-item nav-link">Agenda tu cita</a>
+              <a href="screens/ProductosyRepuestos.php" class="nav-item nav-link">Productos y repuestos</a>
+              <a href="screens/AgendarCitas.php" class="nav-item nav-link">Agenda tu cita</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -161,10 +164,10 @@
 
                 </div>
               </div>
-              <a href="contacto.php" class="nav-item nav-link">Contactos</a>
+              <a href="screens/contacto.php" class="nav-item nav-link">Contactos</a>
             </div>
             <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-              <a href="../screens/Carrito.php" class="btn px-0 ml-3">
+              <a href="screens/Carrito.php" class="btn px-0 ml-3">
                 <i class="fas fa-shopping-cart text-primary"></i>
 
               </a>
@@ -198,7 +201,7 @@
               style="height: 430px">
               <img
                 class="position-absolute w-100 h-100"
-                src="img/carousel-1.jpg"
+                src="screens/img/carousel-1.jpg"
                 style="object-fit: cover" />
               <div
                 class="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -213,7 +216,7 @@
                   </p>
                   <a
                     class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                    href="servicosMacanicos.php">Ir</a>
+                    href="screens/servicosMacanicos.php">Ir</a>
                 </div>
               </div>
             </div>
@@ -222,7 +225,7 @@
               style="height: 430px">
               <img
                 class="position-absolute w-100 h-100"
-                src="img/carousel-2.jpg"
+                src="screens/img/carousel-2.jpg"
                 style="object-fit: cover" />
               <div
                 class="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -238,7 +241,7 @@
                   </p>
                   <a
                     class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                    href="AgendarCitas.php">Ir</a>
+                    href="screens/AgendarCitas.php">Ir</a>
                 </div>
               </div>
             </div>
@@ -247,7 +250,7 @@
               style="height: 430px">
               <img
                 class="position-absolute w-100 h-100"
-                src="img/carousel-3.jpg"
+                src="screens/img/carousel-3.jpg"
                 style="object-fit: cover" />
               <div
                 class="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -263,7 +266,7 @@
                   </p>
                   <a
                     class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                    href="Consejos.php">Ir</a>
+                    href="screens/Consejos.php">Ir</a>
                 </div>
               </div>
             </div>
@@ -272,19 +275,19 @@
       </div>
       <div class="col-lg-4">
         <div class="product-offer mb-30" style="height: 200px">
-          <img class="img-fluid" src="img/ven-1.jpg" alt="" />
+          <img class="img-fluid" src="screens/img/ven-1.jpg" alt="" />
           <div class="offer-text">
             <h6 class="text-white text-uppercase">Mejor calidad</h6>
             <h3 class="text-white mb-3">Productos</h3>
-            <a href="ProductosyRepuestos.php" class="btn btn-primary">Comprar</a>
+            <a href="screens/ProductosyRepuestos.php" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <div class="product-offer mb-30" style="height: 200px">
-          <img class="img-fluid" src="img/ven-2.jpg" alt="" />
+          <img class="img-fluid" src="screens/img/ven-2.jpg" alt="" />
           <div class="offer-text">
             <h6 class="text-white text-uppercase">Mejor calidad</h6>
             <h3 class="text-white mb-3">Repuestos</h3>
-            <a href="ProductosyRepuestos.php" class="btn btn-primary">Comprar</a>
+            <a href="screens/ProductosyRepuestos.php" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
@@ -341,28 +344,28 @@
       <div class="col">
         <div class="owl-carousel vendor-carousel">
           <div class="bg-light p-4">
-            <img src="img/vendor-1.jpg" alt="" />
+            <img src="screens/img/vendor-1.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-2.jpg" alt="" />
+            <img src="screens/img/vendor-2.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-3.jpg" alt="" />
+            <img src="screens/img/vendor-3.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-4.jpg" alt="" />
+            <img src="screens/img/vendor-4.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-5.jpg" alt="" />
+            <img src="screens/img/vendor-5.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-6.jpg" alt="" />
+            <img src="screens/img/vendor-6.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-7.jpg" alt="" />
+            <img src="screens/img/vendor-7.jpg" alt="" />
           </div>
           <div class="bg-light p-4">
-            <img src="img/vendor-8.jpg" alt="" />
+            <img src="screens/img/vendor-8.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -391,10 +394,10 @@
           <div class="col-md-4 mb-5">
             <h5 class="text-secondary text-uppercase mb-4">Atajos</h5>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-secondary mb-2" href="../screens/index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
-              <a class="text-secondary mb-2" href="../screens/ProductosyRepuestos.php"><i class="fa fa-angle-right mr-2"></i>Productos y
+              <a class="text-secondary mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+              <a class="text-secondary mb-2" href="screens/ProductosyRepuestos.php"><i class="fa fa-angle-right mr-2"></i>Productos y
                 Repuestos</a>
-              <a class="text-secondary mb-2" href="../screens/Carrito.php"><i class="fa fa-angle-right mr-2"></i>Carrito de compra</a>
+              <a class="text-secondary mb-2" href="screens/Carrito.php"><i class="fa fa-angle-right mr-2"></i>Carrito de compra</a>
 
               <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Agenda tu cita</a>
               <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contactos</a>
@@ -403,12 +406,12 @@
           <div class="col-md-4 mb-5">
             <h5 class="text-secondary text-uppercase mb-4">Mi cuenta</h5>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-secondary mb-2" href="../screens/index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
-              <a class="text-secondary mb-2" href="../screens/login.php"><i class="fa fa-angle-right mr-2"></i>Iniciar sesión</a>
-              <a class="text-secondary mb-2" href="../screens/Inscribirse.php"><i class="fa fa-angle-right mr-2"></i>Inscribirse</a>
-              <a class="text-secondary mb-2" href="../screens/servicosMacanicos.php"><i class="fa fa-angle-right mr-2"></i>Información de
+              <a class="text-secondary mb-2" href="index.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+              <a class="text-secondary mb-2" href="screens/login.php"><i class="fa fa-angle-right mr-2"></i>Iniciar sesión</a>
+              <a class="text-secondary mb-2" href="screens/Inscribirse.php"><i class="fa fa-angle-right mr-2"></i>Inscribirse</a>
+              <a class="text-secondary mb-2" href="screens/servicosMacanicos.php"><i class="fa fa-angle-right mr-2"></i>Información de
                 servicios</a>
-              <a class="text-secondary mb-2" href="../screens/Informaciónmecanicos.php"><i class="fa fa-angle-right mr-2"></i>Información de
+              <a class="text-secondary mb-2" href="screens/Informaciónmecanicos.php"><i class="fa fa-angle-right mr-2"></i>Información de
                 mecanicos</a>
             </div>
           </div>
@@ -435,7 +438,7 @@
         </p>
       </div>
       <div class="col-md-6 px-xl-0 text-center text-md-right">
-        <img class="img-fluid-univalle" src="img/uni.jpg" alt="" />
+        <img class="img-fluid-univalle" src="screens/img/uni.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -447,8 +450,8 @@
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="../lib/easing/easing.min.js"></script>
-  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
 
