@@ -1,4 +1,4 @@
-name: Pruebas PHPUnit y Composer
+name: Pruebas PHPUnit Y Composer
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
     - name: Configurando PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.1' # Puedes ajustar la versión de PHP según tus necesidades
+        php-version: '8.2' # Actualizado a PHP 8.2 para satisfacer las dependencias
         extensions: mbstring, intl, mysqli
         ini-values: post_max_size=256M, upload_max_filesize=256M
         coverage: none
@@ -42,8 +42,4 @@ jobs:
       run: |
         vendor/bin/phpunit --testdox
 
-    - name: Deploy a Render
-      run: |
-        curl -X POST "https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}" \
-        -H "Content-Type: application/json" \
-        -d '{}'
+    - name
