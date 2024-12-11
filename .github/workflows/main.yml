@@ -1,0 +1,49 @@
+name: Pruebas PHPUnit y Composer
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonando el repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurando PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1' # Puedes ajustar la versión de PHP según tus necesidades
+        extensions: mbstring, intl, mysqli
+        ini-values: post_max_size=256M, upload_max_filesize=256M
+        coverage: none
+
+    - name: Instalar dependencias con Composer
+      run: |
+        composer install --no-progress --no-suggest
+
+    - name: Validando dependencias instaladas
+      run: |
+        composer show
+
+    - name: Linter con PHP_CodeSniffer
+      run: |
+        vendor/bin/phpcs --standard=PSR12 .
+
+    - name: Ejecutar pruebas con PHPUnit
+      run: |
+        vendor/bin/phpunit --testdox
+
+    - name: Deploy a Render
+      run: |
+        curl -X POST "https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}" \
+        -H "Content-Type: application/json" \
+        -d '{}'
