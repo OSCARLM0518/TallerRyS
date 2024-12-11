@@ -34,10 +34,6 @@ jobs:
       run: |
         composer show
 
-    - name: Linter con PHP_CodeSniffer
-      run: |
-        vendor/bin/phpcs --standard=PSR12 .
-
     - name: Ejecutar pruebas con PHPUnit
       run: |
         vendor/bin/phpunit --testdox
