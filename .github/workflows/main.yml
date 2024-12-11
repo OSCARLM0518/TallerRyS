@@ -42,4 +42,9 @@ jobs:
       run: |
         vendor/bin/phpunit --testdox
 
-    - name
+    - name :  Deploy a Render
+      run: |
+        curl -X POST "https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}" \
+        -H "Content-Type: application/json" \
+        -d '{}'
+    
